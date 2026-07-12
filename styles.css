@@ -1,0 +1,117 @@
+/* overall */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(47, 88%, 63%);
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* main */
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* card */
+
+.card {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 17px;
+    padding: 19px 21px;
+    max-width: 315px;
+    width: 90%;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+    border: 0.5px solid hsl(0, 0%, 7%);
+    box-shadow: 8px 8px 0 0 hsl(0, 0%, 7%);
+}
+
+.card img:not(.avatar) {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 2px
+}
+
+.author .name {
+    margin: 0;
+    color: hsl(0, 0%, 7%);
+    font-size: 0.75em;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.quote {
+    color:  hsl(0, 0%, 42%);
+    line-height: 1.5;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+.learning {
+    display: block;
+    background-color: hsl(47, 88%, 63%);
+    width: fit-content;
+    padding: 6px 12px;
+    color: hsl(0, 0%, 7%);
+    font-weight: 800;
+    font-size: 0.7em;
+    border-radius: 3.5px;
+    margin-bottom: 15px;
+    transform: scaleY(1.09);
+    transform-origin: bottom; 
+}
+
+.card h1 {
+    color: hsl(0, 0%, 7%);
+    font-size: 1.2em;
+    font-weight: 800;
+    height: 1.3em;
+    margin-bottom: 17px;
+    transform: scaleY(1.15);
+    transform-origin: bottom; 
+    transition: color 0.3s ease-in;
+}
+
+.card h1:hover {
+    color: hsl(47, 88%, 63%);
+}
+
+.date-time {
+    color: hsl(0, 0%, 7%);
+    font-size: 0.75em;
+    margin-bottom: 18px;
+    font-weight: 700;
+}
+
+.attribution {
+    font-size: 0.6875rem; text-align: center; 
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
