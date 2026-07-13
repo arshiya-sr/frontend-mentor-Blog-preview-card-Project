@@ -54,11 +54,10 @@ main {
     align-items: center;
     gap: 10px;
     margin-top: 20px;
-    margin-bottom: 2px
+    margin-bottom: 2px;
 }
 
 .author .name {
-    margin: 0;
     color: hsl(0, 0%, 7%);
     font-size: 0.75em;
     font-weight: 800;
@@ -115,3 +114,4 @@ main {
 .attribution a {
     color: hsl(228, 45%, 44%); 
 }
+
