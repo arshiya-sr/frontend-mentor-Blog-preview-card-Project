@@ -26,8 +26,8 @@ main {
 
 .card {
     background-color: hsl(0, 0%, 100%);
-    border-radius: 17px;
-    padding: 19px 21px;
+    border-radius: 1.05rem;
+    padding: 1.2rem 1.25rem;
     max-width: 315px;
     width: 90%;
     text-align: left;
@@ -37,10 +37,10 @@ main {
     box-shadow: 8px 8px 0 0 hsl(0, 0%, 7%);
 }
 
-.card img:not(.avatar) {
+.card .card-img {
     width: 100%;
-    border-radius: 10px;
-    margin-bottom: 20px;
+    border-radius: 0.65rem;
+    margin-bottom: 1.2rem;
 }
 
 .avatar {
@@ -52,14 +52,14 @@ main {
 .author {
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin-top: 20px;
+    gap: .65rem;
+    margin-top: 1.2rem;
     margin-bottom: 2px;
 }
 
 .author .name {
     color: hsl(0, 0%, 7%);
-    font-size: 0.75em;
+    font-size: 0.75rem;
     font-weight: 800;
     white-space: nowrap;
 }
@@ -75,29 +75,25 @@ main {
     display: block;
     background-color: hsl(47, 88%, 63%);
     width: fit-content;
-    padding: 6px 12px;
+    padding: 0.35rem 0.8rem;
     color: hsl(0, 0%, 7%);
     font-weight: 800;
     font-size: 0.7em;
-    border-radius: 3.5px;
-    margin-bottom: 15px;
+    border-radius: 0.25rem;
+    margin-bottom: 0.9rem;
     transform: scaleY(1.09);
     transform-origin: bottom; 
 }
 
-.card h1 {
+.card .card-title {
     color: hsl(0, 0%, 7%);
     font-size: 1.2em;
     font-weight: 800;
     height: 1.3em;
-    margin-bottom: 17px;
+    margin-bottom: 1.1rem;
     transform: scaleY(1.15);
     transform-origin: bottom; 
-    transition: color 0.3s ease-in;
-}
-
-.card h1:hover {
-    color: hsl(47, 88%, 63%);
+    transition: color 0.2s ease-in;
 }
 
 .date-time {
@@ -107,6 +103,8 @@ main {
     font-weight: 700;
 }
 
+/* footer */
+
 .attribution {
     font-size: 0.6875rem; text-align: center; 
 }
@@ -115,3 +113,9 @@ main {
     color: hsl(228, 45%, 44%); 
 }
 
+/* responsive */
+
+.card h1:hover {
+    color: hsl(47, 47%, 42%);
+    cursor: pointer;
+}
